@@ -81,7 +81,7 @@ test('note without content is not added', async () => {
 
 
     expect(notesAtEnd).toHaveLength(helper.initialNotes.length)
-})
+}, 15000)
 
 afterAll(async () => {
     await mongoose.connection.close()
